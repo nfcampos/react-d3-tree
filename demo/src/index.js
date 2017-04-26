@@ -1,15 +1,19 @@
-import React from 'react'
-import {render} from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
-import Component from '../../src'
+import Tree from '../../src';
 
-let Demo = React.createClass({
+import data from './data';
+
+let Demo = class extends React.Component {
   render() {
-    return <div>
-      <h1>react-d3-tree Demo</h1>
-      <Component/>
-    </div>
+    return (
+      <div>
+        <h1>react-d3-tree Demo</h1>
+        <Tree data={data} node={<circle r={5} />} />
+      </div>
+    );
   }
-})
+};
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector('#demo'));
