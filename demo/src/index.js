@@ -10,7 +10,14 @@ let Demo = class extends React.Component {
     return (
       <div>
         <h1>react-d3-tree Demo</h1>
-        <Tree data={data} node={<circle r={5} />} />
+        <Tree
+          height={200}
+          width={400}
+          margin={10}
+          data={data}
+          node={<circle r={5} />}
+          link={<line strokeWidth={1} stroke="black" />}
+        />
       </div>
     );
   }
