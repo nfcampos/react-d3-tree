@@ -19,16 +19,15 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "d3-hierarchy": "^1.1.4",
-    "react": "15.x"
+    "d3-hierarchy": "^1.1.4"
   },
   "peerDependencies": {
     "react": "15.x"
   },
   "devDependencies": {
     "nwb": "0.15.x",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^15.x",
+    "react-dom": "^15.x"
   },
   "author": "",
   "homepage": "",
